@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakir_ES6_Assignment4A_Form</title>
+    <style>
+        body{
+            background-color: #29244C;
+        }
+        .maindiv{
+            width: 90%;
+            padding: 20px;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .sub_left , .sub_right{
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sub_left{
+            width: 35%;
+        }
+        .sub_right{
+            width: 65%;
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .small_div{
+            height: 20px;
+            width: 95%;
+            margin: auto;
+        }
+        .small_div1{
+            height: 85px;
+            width: 95%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .small_div2{
+            height: 50px;
+            width: 95%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        #div_rd , #div_cb{
+            height: 85px;
+        }
+        #div_sl{
+            height: 50px;
+        }
+        
+        .right1, .right2{
+            width: 50%;
+        }
+
+        .slt_int{
+            width: 170px;
+            display: block;
+        }
+
+        #bt_l , #bt_r{
+            padding: 25px;
+            width: 40%;
+            background-color: #6F6795;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .bottom_div{
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+        }
+        #left1 ,#left2, #rt1, #rt2 {
+            width: 45%;
+        }
+
+        .dnone{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="maindiv">
+    <div class="sub_left">
+    <select id="select1">
+        <option value="1">Text</option>
+        <option value="2">Number</option>
+        <option value="3">Email</option>
+        <option value="4">Radio</option>
+        <option value="5">Select</option>
+        <option value="6">Checkbox</option>
+        <option value="7">Submit</option>
+    </select>
+    <button onclick="main_fun();">ADD</button>
+    </div>
+
+    <div class="sub_right">
+        <div class="right1" id="c_form1"></div>
+        <div class="right2" id="c_form2"></div>
+    </div>
+</div>
+
+<div class="bottom_div">
+    <div id="bt_l">
+        <div id="left1"></div>
+        <div id="left2"></div>
+    </div>
+    <div id="bt_r">
+        <div id="rt1"></div>
+        <div id="rt2">
+            <div id="div_nm"></div>
+            <div id="div_ag"></div>
+            <div id="div_em"></div>
+            <div id="div_rd"></div>
+            <div id="div_sl"></div>
+            <div id="div_cb"></div>
+        </div>
+    </div>
+</div>
+
+<script src="ES6_Assignment_4A.js"></script>
+</body>
+</html>
